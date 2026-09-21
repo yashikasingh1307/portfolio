@@ -1,4 +1,5 @@
 import SectionHead from "../ui/SectionHead";
+import Reveal from "../ui/Reveal";
 
 const SKILL_MODULES = [
   { title: "Programming", items: ["C++", "Python", "JavaScript"] },
@@ -11,6 +12,7 @@ function Skills() {
   return (
     <section className="section skills" id="skills" aria-labelledby="skills-title">
       <div className="container">
+        <Reveal>
         <SectionHead number="04" title="Skills" id="skills-title" />
 
         <div className="skills__grid">
@@ -25,6 +27,7 @@ function Skills() {
             </div>
           ))}
         </div>
+        </Reveal>
       </div>
     </section>
   );

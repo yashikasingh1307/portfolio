@@ -11,7 +11,10 @@
   --grid-line: rgba(250, 222, 168, 0.035);
   --glow-red: rgba(252, 0, 0, 0.16);
 
-  --font-display: "Bridge", "Bridge Fallback", Impact, "Arial Narrow", sans-serif;
+  --font-display: "Curve Retro", "Bridge Fallback", Impact, sans-serif;
+  --hero-name-size: clamp(4.5rem, 10.5vw, 9.5rem);
+  --hero-name-size-mobile: clamp(4.5rem, 24vw, 8.5rem);
+
   --font-label: "Zen Dots", "Trebuchet MS", sans-serif;
   --font-body: "PT Serif", Georgia, "Times New Roman", serif;
 

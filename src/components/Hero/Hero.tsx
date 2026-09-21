@@ -1,4 +1,9 @@
+import { motion, useReducedMotion } from "framer-motion";
+import Portrait from "./Portrait";
+
 function Hero() {
+  const prefersReducedMotion = useReducedMotion();
+
   return (
     <section className="hero" id="top" aria-labelledby="hero-title">
       <div className="hero__top">
@@ -14,26 +19,24 @@ function Hero() {
       </div>
 
       <div className="hero__main">
-        <div className="hero__copy">
+        <motion.div
+          className="hero__copy"
+          initial={prefersReducedMotion ? false : { opacity: 0, y: 24 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6, ease: "easeOut" }}
+        >
           <h1 className="hero__name" id="hero-title">
             <span>Yashika</span>
             <span>Singh</span>
           </h1>
           <p className="hero__role">Computer Science Engineering student at IGDTUW</p>
           <p className="hero__intro">
-            Exploring software development, AI, and creative problem-solving
+            A second-year student exploring software development, AI, and creative problem-solving
           </p>
           <p className="hero__tags">CSE STUDENT · DEVELOPER · BUILDER</p>
-        </div>
+        </motion.div>
 
-        <div className="hero__portrait">
-          <img
-            src="/images/portrait.jpg"
-            width={812}
-            height={812}
-            alt="Portrait of Yashika Singh"
-          />
-        </div>
+        <Portrait />
       </div>
 
       <p className="hero__footer">CSE @ IGDTUW · 2025—2029 · NEW DELHI, INDIA</p>

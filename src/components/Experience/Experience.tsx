@@ -1,4 +1,5 @@
 import SectionHead from "../ui/SectionHead";
+import Reveal from "../ui/Reveal";
 
 const TIMELINE = [
   {
@@ -18,6 +19,7 @@ function Experience() {
       aria-labelledby="experience-title"
     >
       <div className="container">
+        <Reveal>
         <SectionHead number="02" title="Experience" id="experience-title" />
 
         <ol className="timeline">
@@ -33,6 +35,7 @@ function Experience() {
             </li>
           ))}
         </ol>
+        </Reveal>
       </div>
     </section>
   );

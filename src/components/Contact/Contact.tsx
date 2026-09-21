@@ -1,9 +1,11 @@
 import SectionHead from "../ui/SectionHead";
+import Reveal from "../ui/Reveal";
 
 function Contact() {
   return (
     <section className="section contact" id="contact" aria-labelledby="contact-title">
       <div className="container">
+        <Reveal>
         <SectionHead number="06" title="Contact" id="contact-title" />
 
         <h3 className="contact__title">
@@ -47,6 +49,7 @@ function Contact() {
             Email <span aria-hidden="true">↗</span>
           </a>
         </div>
+        </Reveal>
       </div>
     </section>
   );

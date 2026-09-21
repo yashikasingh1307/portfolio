@@ -1,9 +1,11 @@
 import SectionHead from "../ui/SectionHead";
+import Reveal from "../ui/Reveal";
 
 function About() {
   return (
     <section className="section about" id="about" aria-labelledby="about-title">
       <div className="container">
+        <Reveal>
         <SectionHead number="01" title="About" id="about-title" />
 
         <div className="about__grid">
@@ -50,6 +52,7 @@ function About() {
             </div>
           </div>
         </div>
+        </Reveal>
       </div>
     </section>
   );
