@@ -7,7 +7,7 @@
 
 .skill-module {
   position: relative;
-  padding: clamp(1.4rem, 2.35vw, 2.05rem);
+  padding: clamp(1.1rem, 1.8vw, 2.05rem);
   border-right: 1px solid var(--line-red);
   border-bottom: 1px solid var(--line-red);
 }
@@ -23,7 +23,7 @@
 }
 
 .skill-module__title {
-  padding-bottom: 1.1rem;
+  padding-bottom: 0.75rem;
   margin-bottom: 0.4rem;
   border-bottom: 1px solid var(--line-red-soft);
 }
