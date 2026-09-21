@@ -1,0 +1,21 @@
+/* Global / shared styles (design tokens, resets, layout primitives) */
+@import "./fonts.css";
+@import "./variables.css";
+@import "./base.css";
+
+/* Shared UI primitives */
+@import "./components/ui/section-head.css";
+
+/* Per-section styles */
+@import "./components/Nav/nav.css";
+@import "./components/Hero/hero.css";
+@import "./components/About/about.css";
+@import "./components/Experience/experience.css";
+@import "./components/Projects/projects.css";
+@import "./components/Skills/skills.css";
+@import "./components/Achievements/achievements.css";
+@import "./components/Contact/contact.css";
+@import "./components/Footer/footer.css";
+
+/* Responsive overrides (mobile/tablet), loaded last so it wins the cascade */
+@import "./responsive.css";

@@ -1,0 +1,142 @@
+@media (max-width: 1100px) {
+  .skills__grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .projects__grid {
+    grid-template-columns: 1fr;
+  }
+
+  .project {
+    max-width: 42rem;
+  }
+
+  .project__title {
+    min-height: 0;
+  }
+}
+
+@media (max-width: 900px) {
+  .nav__toggle {
+    display: block;
+  }
+
+  .nav__list {
+    position: absolute;
+    top: var(--nav-height);
+    left: 0;
+    right: 0;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 0;
+    padding: 0.5rem var(--gutter) 1.25rem;
+    background: var(--black);
+    border-bottom: 1px solid var(--line-red-soft);
+    visibility: hidden;
+    opacity: 0;
+    transform: translateY(-0.5rem);
+    transition: opacity 0.2s ease, transform 0.2s ease, visibility 0.2s;
+  }
+
+  .nav__list.is-open {
+    visibility: visible;
+    opacity: 1;
+    transform: none;
+  }
+
+  .nav__link {
+    padding-block: 0.9rem;
+    font-size: 0.85rem;
+    border-bottom: 1px solid var(--line-red-soft);
+  }
+
+  .nav__link::after {
+    display: none;
+  }
+
+  .hero__main {
+    grid-template-columns: 1fr;
+    gap: 2.5rem;
+    padding-block: 2.5rem 1.5rem;
+  }
+
+  .hero__portrait {
+    width: min(65vw, 16.5rem);
+    margin-right: 0.9rem;
+  }
+
+  .hero__name {
+    font-size: clamp(5.4rem, 24vw, 9.75rem);
+  }
+
+  .hero::before {
+    width: 30vw;
+    opacity: 0.8;
+  }
+
+  .about__grid {
+    grid-template-columns: 1fr;
+    gap: 3.5rem;
+  }
+
+  .about__aside {
+    padding-left: 0;
+    padding-top: 2.5rem;
+    border-left: 0;
+    border-top: 1px solid var(--line-red);
+  }
+
+  .timeline {
+    --year-col: 0px;
+    --rail-gap: 0px;
+  }
+
+  .timeline::before {
+    left: 4px;
+  }
+
+  .timeline__item {
+    grid-template-columns: 1fr;
+    padding-left: 2rem;
+  }
+
+  .timeline__item::before {
+    left: 0;
+  }
+
+  .timeline__year {
+    text-align: left;
+    padding-bottom: 0.6rem;
+    color: var(--red);
+  }
+
+  .highlights {
+    grid-template-columns: 1fr;
+  }
+
+  .highlight + .highlight {
+    padding-left: 0;
+    border-left: 0;
+    border-top: 1px solid var(--line-red-soft);
+  }
+}
+
+@media (max-width: 600px) {
+  .hero__top {
+    align-items: flex-start;
+  }
+
+  .skills__grid {
+    grid-template-columns: 1fr;
+  }
+
+  .contact__links .link-button {
+    flex: 1 1 calc(50% - 0.5rem);
+    min-width: 0;
+    padding-inline: 1rem;
+  }
+
+  .section-head__rule {
+    display: none;
+  }
+}

@@ -1,0 +1,35 @@
+.skills__grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  border-top: 1px solid var(--line-red);
+  border-left: 1px solid var(--line-red);
+}
+
+.skill-module {
+  position: relative;
+  padding: clamp(1.4rem, 2.35vw, 2.05rem);
+  border-right: 1px solid var(--line-red);
+  border-bottom: 1px solid var(--line-red);
+}
+
+.skill-module::before {
+  content: "";
+  position: absolute;
+  top: -4px;
+  left: -4px;
+  width: 7px;
+  height: 7px;
+  background: var(--red);
+}
+
+.skill-module__title {
+  padding-bottom: 1.1rem;
+  margin-bottom: 0.4rem;
+  border-bottom: 1px solid var(--line-red-soft);
+}
+
+.skill-module__list li {
+  padding-block: 0.55rem;
+  font-size: 1.08rem;
+  line-height: 1.5;
+}

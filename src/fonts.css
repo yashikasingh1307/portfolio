@@ -1,0 +1,42 @@
+@font-face {
+  font-family: "Bridge";
+  src: local("Bridge"),
+       url("/fonts/Bridge.woff2") format("woff2"),
+       url("/fonts/Bridge.otf") format("opentype"),
+       url("/fonts/Bridge.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Bridge Fallback";
+  src: url("/fonts/BebasNeue-Regular.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Zen Dots";
+  src: url("/fonts/ZenDots-Regular.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "PT Serif";
+  src: url("/fonts/PT_Serif-Web-Regular.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "PT Serif";
+  src: url("/fonts/PT_Serif-Web-Italic.woff2") format("woff2");
+  font-weight: 400;
+  font-style: italic;
+  font-display: swap;
+}

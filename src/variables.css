@@ -1,0 +1,25 @@
+:root {
+  --black: #000000;
+  --burgundy: #180000;
+  --cream: #FADEA8;
+  --red: #FC0000;
+  --white: #FFFFFF;
+
+  --line-red: rgba(252, 0, 0, 0.6);
+  --line-red-soft: rgba(252, 0, 0, 0.3);
+  --line-cream: rgba(250, 222, 168, 0.55);
+  --grid-line: rgba(250, 222, 168, 0.035);
+  --glow-red: rgba(252, 0, 0, 0.16);
+
+  --font-display: "Bridge", "Bridge Fallback", Impact, "Arial Narrow", sans-serif;
+  --font-label: "Zen Dots", "Trebuchet MS", sans-serif;
+  --font-body: "PT Serif", Georgia, "Times New Roman", serif;
+
+  --nav-height: 3.1rem;
+  --gutter: clamp(1.25rem, 4.75vw, 4.25rem);
+  --content-width: 74rem;
+  --section-space: clamp(4.75rem, 9vw, 7.75rem);
+
+  --label-size: 0.75rem;
+  --label-tracking: 0.08em;
+}
