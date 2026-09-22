@@ -1,4 +1,5 @@
 import SectionHead from "../ui/SectionHead";
+import Reveal from "../ui/Reveal";
 
 interface Highlight {
   number: string;
@@ -36,28 +37,40 @@ function Achievements() {
       aria-labelledby="achievements-title"
     >
       <div className="container">
-        <SectionHead number="05" title="Achievements" id="achievements-title" />
+        <Reveal>
+          <SectionHead
+            number="05"
+            title="Achievements"
+            id="achievements-title"
+          />
 
-        <div className="highlights">
-          {HIGHLIGHTS.map((item) => (
-            <article className="highlight" key={item.title}>
-              <span className="highlight__number label label--red">
-                {item.number}
-              </span>
-              <p className="highlight__stat">{item.stat}</p>
-              <h3 className="highlight__title label">{item.title}</h3>
-              <p className="highlight__text">{item.text}</p>
-              <a
-                className="highlight__link label"
-                href={item.href}
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                {item.linkLabel} <span aria-hidden="true">↗</span>
-              </a>
-            </article>
-          ))}
-        </div>
+          <div className="highlights">
+            {HIGHLIGHTS.map((item) => (
+              <article className="highlight" key={item.title}>
+                <span className="highlight__number label label--red">
+                  {item.number}
+                </span>
+
+                <p className="highlight__stat">{item.stat}</p>
+
+                <h3 className="highlight__title label">
+                  {item.title}
+                </h3>
+
+                <p className="highlight__text">{item.text}</p>
+
+                <a
+                  className="highlight__link label"
+                  href={item.href}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  {item.linkLabel} <span aria-hidden="true">↗</span>
+                </a>
+              </article>
+            ))}
+          </div>
+        </Reveal>
       </div>
     </section>
   );

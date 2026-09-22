@@ -1,7 +1,7 @@
 .contact__title {
   font-family: var(--font-display);
   font-weight: 400;
-  font-size: clamp(2rem, 9vw, 8rem);
+  font-size: clamp(2rem, 4vw, 8rem);
   line-height: 0.98;
   letter-spacing: 0.01em;
   color: var(--cream);
@@ -9,9 +9,9 @@
 }
 
 .contact__text {
-  margin-top: clamp(2rem, 4vw, 3rem);
+  margin-top: clamp(2rem, 2vw, 3rem);
   max-width: 42rem;
-  font-size: clamp(1.05rem, 1.35vw, 1.2rem);
+  font-size: clamp(1.05rem, 3vw, 1.2rem);
   line-height: 1.8;
 }
 

@@ -9,9 +9,7 @@ function Contact() {
         <SectionHead number="06" title="Contact" id="contact-title" />
 
         <h3 className="contact__title">
-          Let's build
-          <br />
-          something.
+          Found something worth talking about?
         </h3>
         <p className="contact__text">
           Have an idea, opportunity, project or just want to say hi?
@@ -29,6 +27,7 @@ function Contact() {
           >
             GitHub <span aria-hidden="true">↗</span>
           </a>
+
           <a
             className="link-button"
             href="https://leetcode.com/u/YashikaSingh_1311/"
@@ -37,6 +36,7 @@ function Contact() {
           >
             LeetCode <span aria-hidden="true">↗</span>
           </a>
+
           <a
             className="link-button"
             href="https://www.linkedin.com/in/yashika-singh-39b9a8378"
@@ -45,8 +45,19 @@ function Contact() {
           >
             LinkedIn <span aria-hidden="true">↗</span>
           </a>
-          <a className="link-button" href="mailto:yashikasingh13nov@gmail.com">
+
+          <a
+            className="link-button"
+            href="mailto:yashikasingh13nov@gmail.com"
+          >
             Email <span aria-hidden="true">↗</span>
+          </a>
+
+          <a
+            className="link-button"
+            href="tel:+917827286107"
+          >
+            +91 7827286107 <span aria-hidden="true">↗</span>
           </a>
         </div>
         </Reveal>

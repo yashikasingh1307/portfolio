@@ -36,8 +36,7 @@ function Hero() {
           </p>
 
           <p className="hero__intro">
-            A second-year student exploring software development, AI, and
-            creative problem-solving
+            From solving DSA problems to building apps and experimenting with machine learning, I enjoy turning ideas into working projects.
           </p>
 
           <p className="hero__stack">

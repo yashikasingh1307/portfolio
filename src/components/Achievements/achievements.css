@@ -4,16 +4,16 @@
 
 .highlight {
   display: grid;
-  grid-template-columns: 3rem minmax(0, 1fr) auto;
+  grid-template-columns: 2.5rem minmax(0, 1fr) auto;
   grid-template-areas:
     "num stat link"
     "num title link"
     "num text link";
 
-  column-gap: 1rem;
+  column-gap: 0.8rem;
   align-items: start;
 
-  padding-block: 1rem; /* was 1.75rem */
+  padding-block: 0.8rem;
   border-top: 1px solid var(--line-red);
 }
 
@@ -24,14 +24,15 @@
 /* 01 / 02 */
 .highlight__number {
   grid-area: num;
-  padding-top: 0.35rem;
+  padding-top: 0.25rem;
+  font-size: 0.72rem;
 }
 
 /* FINALIST / 200+ */
 .highlight__stat {
   grid-area: stat;
   font-family: var(--font-display);
-  font-size: clamp(2rem, 3vw, 2rem); /* smaller */
+  font-size: clamp(1.7rem, 2.5vw, 2rem);
   line-height: 0.9;
   letter-spacing: 0.01em;
   color: var(--cream);
@@ -41,22 +42,26 @@
 /* DELHI AI GRIND / LEETCODE */
 .highlight__title {
   grid-area: title;
-  margin-top: 0.35rem;
+  margin-top: 0.3rem;
+  font-size: 0.72rem;
   color: var(--white);
 }
 
 /* Description */
 .highlight__text {
   grid-area: text;
-  margin-top: 0.3rem;
-  max-width: 26rem;
+  margin-top: 0.25rem;
+  max-width: 24rem;
+  font-size: 0.88rem;
+  line-height: 1.45;
 }
 
 /* VIEW PROJECT / VIEW PROFILE */
 .highlight__link {
   grid-area: link;
   align-self: center;
-  padding-bottom: 0.2rem;
+  padding-bottom: 0.15rem;
+  font-size: 0.7rem;
   color: var(--cream);
   border-bottom: 1px solid var(--line-red);
   transition: color 0.2s ease, border-color 0.2s ease;
@@ -70,7 +75,7 @@
 
 @media (max-width: 700px) {
   .highlight {
-    grid-template-columns: 2.5rem minmax(0, 1fr);
+    grid-template-columns: 2.2rem minmax(0, 1fr);
 
     grid-template-areas:
       "num stat"
@@ -78,11 +83,11 @@
       "num text"
       "num link";
 
-    padding-block: 1rem;
+    padding-block: 0.8rem;
   }
 
   .highlight__link {
     align-self: start;
-    margin-top: 0.75rem;
+    margin-top: 0.6rem;
   }
 }
