@@ -4,7 +4,7 @@
   flex-direction: column;
   min-height: 100vh;
   min-height: 100svh;
-  padding: calc(var(--nav-height) + 2.25rem) var(--gutter) 2rem;
+  padding: calc(var(--nav-height) + 1.5rem) var(--gutter) 2rem;
   overflow: hidden;
   isolation: isolate;
 }
@@ -25,7 +25,7 @@
   height: 100%;
   background-image: url("/svg/hero-curves-left.svg");
   background-position: left top;
-  background-size: 100% auto;
+  background-size: 80% auto;
 }
 
 .hero::after {
@@ -61,7 +61,7 @@
   grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
   align-items: center;
   gap: clamp(2rem, 5vw, 5rem);
-  padding-block: 2rem;
+  padding-block: 0;
 }
 
 .hero__copy {
@@ -69,12 +69,13 @@
   flex-direction: column;
   align-items: center;
   text-align: center;
+  transform: translate(8rem, 8rem);
 }
 
 .hero__name {
   font-family: var(--font-display);
   font-weight: 150;
-  font-size: clamp(8.5rem, 8.5vw, 8.5rem);
+  font-size: clamp(7.5rem, 7.5vw, 7.5rem);
   line-height: 0.80;
   letter-spacing: 0.01em;
   color: var(--cream);
@@ -101,6 +102,15 @@
   color: var(--white);
 }
 
+.hero__stack {
+  margin-top: 1.1rem;
+  font-family: "Zen Dots", var(--font-display);
+  font-size: clamp(0.8rem, 1vw, 0.95rem);
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: var(--cream);
+}
+
 .hero__tags {
   margin-top: 1.6rem;
   font-family: var(--font-display);
@@ -113,8 +123,9 @@
 .hero__portrait {
   position: relative;
   justify-self: center;
-  width: min(100%, 29rem, 55svh);
+  width: min(100%, 25rem, 50svh);
   aspect-ratio: 1;
+  transform: translateX(-1.5rem);
 }
 
 .hero__portrait::before {
@@ -158,12 +169,28 @@
 .hero__name,
 .hero__role,
 .hero__intro,
+.hero__stack,
 .hero__tags,
 .hero__portrait {
   animation: hero-rise 0.9s cubic-bezier(0.2, 0.7, 0.2, 1) both;
 }
 
-.hero__role { animation-delay: 0.15s; }
-.hero__intro { animation-delay: 0.25s; }
-.hero__tags { animation-delay: 0.35s; }
-.hero__portrait { animation-delay: 0.2s; }
+.hero__role {
+  animation-delay: 0.15s;
+}
+
+.hero__intro {
+  animation-delay: 0.25s;
+}
+
+.hero__stack {
+  animation-delay: 0.3s;
+}
+
+.hero__tags {
+  animation-delay: 0.35s;
+}
+
+.hero__portrait {
+  animation-delay: 0.2s;
+}
