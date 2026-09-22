@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg"
+     viewBox="0 0 240 2600"
+     preserveAspectRatio="none"
+     fill="none">
+
+  <!-- upper loop -->
+  <path
+    d="M8 0
+       C8 110 28 150 82 190
+       C128 224 132 292 88 340
+       C50 382 28 420 8 500"
+    stroke="#FC0000"
+    stroke-opacity="0.30"
+    stroke-width="2"
+    stroke-linecap="round"
+  />
+
+  <!-- middle loop -->
+  <path
+    d="M8 760
+       C28 700 62 680 102 708
+       C146 740 150 812 108 858
+       C68 902 32 910 8 870"
+    stroke="#FC0000"
+    stroke-opacity="0.24"
+    stroke-width="2"
+    stroke-linecap="round"
+  />
+
+  <!-- lower loop -->
+  <path
+    d="M8 1540
+       C28 1480 62 1460 104 1490
+       C148 1520 150 1590 108 1638
+       C68 1684 30 1692 8 1650"
+    stroke="#FC0000"
+    stroke-opacity="0.22"
+    stroke-width="2"
+    stroke-linecap="round"
+  />
+
+  <!-- bottom loop -->
+  <path
+    d="M8 2260
+       C26 2205 60 2180 100 2210
+       C142 2240 146 2310 106 2358
+       C66 2404 30 2415 8 2375"
+    stroke="#FC0000"
+    stroke-opacity="0.26"
+    stroke-width="2"
+    stroke-linecap="round"
+  />
+
+</svg>

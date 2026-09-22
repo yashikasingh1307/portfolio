@@ -1,0 +1,74 @@
+<svg xmlns="http://www.w3.org/2000/svg"
+     viewBox="0 0 240 2600"
+     preserveAspectRatio="none"
+     fill="none">
+
+  <!-- upper-right open sweep -->
+  <path
+    d="M232 0
+       C228 105 205 142 158 172
+       C112 202 92 252 112 302
+       C130 348 182 370 232 348"
+    stroke="#FC0000"
+    stroke-opacity="0.30"
+    stroke-width="2"
+    stroke-linecap="round"
+  />
+
+  <!-- small upper accent -->
+  <path
+    d="M232 78
+       C214 148 188 174 154 196"
+    stroke="#FC0000"
+    stroke-opacity="0.13"
+    stroke-width="1"
+    stroke-linecap="round"
+  />
+
+  <!-- middle-right inward loop -->
+  <path
+    d="M232 700
+       C194 670 148 674 124 714
+       C98 756 112 810 156 830
+       C188 844 216 832 232 804"
+    stroke="#FC0000"
+    stroke-opacity="0.23"
+    stroke-width="2"
+    stroke-linecap="round"
+  />
+
+  <!-- lower-middle sweep -->
+  <path
+    d="M232 1360
+       C202 1328 164 1324 138 1352
+       C108 1384 112 1432 146 1458
+       C174 1480 210 1472 232 1448"
+    stroke="#FC0000"
+    stroke-opacity="0.20"
+    stroke-width="2"
+    stroke-linecap="round"
+  />
+
+  <!-- bottom-right larger loop -->
+  <path
+    d="M232 2080
+       C190 2048 140 2062 116 2108
+       C90 2158 110 2220 158 2242
+       C190 2256 220 2242 232 2218"
+    stroke="#FC0000"
+    stroke-opacity="0.26"
+    stroke-width="2"
+    stroke-linecap="round"
+  />
+
+  <!-- bottom accent -->
+  <path
+    d="M232 2310
+       C204 2340 178 2360 148 2364"
+    stroke="#FC0000"
+    stroke-opacity="0.12"
+    stroke-width="1"
+    stroke-linecap="round"
+  />
+
+</svg>
