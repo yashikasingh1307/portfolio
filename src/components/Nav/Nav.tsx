@@ -30,11 +30,17 @@ function Nav() {
     const observer = new IntersectionObserver(
       (entries) => {
         entries.forEach((entry) => {
-          if (entry.isIntersecting) setActiveId(entry.target.id);
+          if (!entry.isIntersecting) return;
+          // Hero ("top") isn't a nav link, so clear the active state
+          // instead of leaving the previous section highlighted.
+          setActiveId(entry.target.id === "top" ? null : entry.target.id);
         });
       },
       { rootMargin: "-40% 0px -55% 0px" }
     );
+
+    const hero = document.getElementById("top");
+    if (hero) observer.observe(hero);
 
     LINKS.forEach(({ href }) => {
       const section = document.getElementById(href.slice(1));

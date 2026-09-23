@@ -44,8 +44,8 @@
   border-bottom: 1px solid var(--line-red-soft);
 
   color: var(--red);
-  font-family: var(--font-display);
-  font-size: 0.72rem;
+  font-family: "Zen Dots", var(--font-display);
+  font-size: 0.5rem;
   line-height: 1;
   letter-spacing: 0.04em;
 }
@@ -103,7 +103,7 @@
   border: 1px solid var(--line-red-soft);
 
   color: var(--white);
-  font-family: var(--font-display);
+  font-family:  var(--font-display);
   font-size: 0.6rem;
   letter-spacing: 0.03em;
   text-decoration: none;
