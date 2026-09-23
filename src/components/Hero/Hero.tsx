@@ -21,10 +21,11 @@ function Hero() {
 
       <div className="hero__main">
         <motion.div
-          className="hero__copy"
-          initial={prefersReducedMotion ? false : { opacity: 0, y: 24 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6, ease: "easeOut" }}
+        className="hero__copy"
+        initial={prefersReducedMotion ? false : { opacity: 0, y: 24 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: false, amount: 0.2 }}
+        transition={{ duration: 0.6, ease: "easeOut" }}
         >
           <h1 className="hero__name" id="hero-title">
             <span>Yashika</span>

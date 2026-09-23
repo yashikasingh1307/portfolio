@@ -5,10 +5,11 @@ function Portrait() {
 
   return (
     <motion.div
-      className="hero__portrait"
-      initial={prefersReducedMotion ? false : { opacity: 0, scale: 0.94 }}
-      animate={{ opacity: 1, scale: 1 }}
-      transition={{ duration: 0.7, ease: "easeOut" }}
+    className="hero__portrait"
+    initial={prefersReducedMotion ? false : { opacity: 0, scale: 0.94 }}
+    whileInView={{ opacity: 1, scale: 1 }}
+    viewport={{ once: false, amount: 0.2 }}
+    transition={{ duration: 0.7, ease: "easeOut" }}
     >
       <img
         src="/images/portrait.jpeg"
